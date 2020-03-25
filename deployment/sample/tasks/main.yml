@@ -2,7 +2,7 @@
  #- include_vars: main.yml
  
  - name: Download WAR to server
-   synchronize: src=/var/lib/jenkins/workspace/sample_pipeline/target/WebApplication.war dest=/opt/tomcat/webapps
+   synchronize: src=/var/lib/jenkins/workspace/jenkins_assignment/target/JenkinsAssignment.war dest=opt/bitnami/tomcat/webapps
 
 # - name: Unzip WAR file
  #  copy:
