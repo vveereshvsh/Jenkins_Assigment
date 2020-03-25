@@ -1,5 +1,5 @@
 ---
- - hosts: test-servers
+ - hosts: tomcatserver
    become: yes
    become_user: root
    roles: 
