@@ -1,0 +1,44 @@
+--- 
+ #- include_vars: main.yml
+ 
+ - name: Download WAR to server
+   synchronize: src=/var/lib/jenkins/workspace/sample_pipeline/target/WebApplication.war dest=/opt/tomcat/webapps
+
+# - name: Unzip WAR file
+ #  copy:
+  #    src: /home/devopsdemo/WebApplication.war 
+   #   dest: /opt/tomcat/webapps/ 
+    #  mode: 0755
+     # owner: tomcat 
+     # group: tomcat
+      #remote-src: yes
+   notify:
+      - Restart tomcat8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

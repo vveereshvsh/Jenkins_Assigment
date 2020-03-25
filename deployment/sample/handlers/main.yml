@@ -1,0 +1,6 @@
+---
+# handlers file for sample
+
+ - name: Restart tomcat8
+   service: name=tomcat state=restarted 
+  

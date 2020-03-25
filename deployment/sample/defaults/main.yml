@@ -1,0 +1,5 @@
+---
+# defaults file for sample
+
+ warName: WebApplication.war
+ warRemotePath: /home/devopsdemo

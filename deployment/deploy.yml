@@ -1,0 +1,12 @@
+---
+ - hosts: test-servers
+   become: yes
+   become_user: root
+   roles: 
+     - role: sample
+   #handlers:
+    # - name: tomcat sever restart
+     #  listen: Restart tomcat8
+     
+
+
