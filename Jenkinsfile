@@ -84,7 +84,7 @@ node {
 
     stage("Deploying ${POM_ARTIFACTID} and  ${POM_VERSION}"){
        // sh 'sudo ansible-playbook -u devopsdemo deploy.yml'
-       sshagent (credentials: ['tomcat-server']) {
+       sshagent (['tomcat-server']) {
        sh 'scp target/JenkinsAssignment.war 34.73.214.58:/opt/tomcat/webapps/'
      }
 }
