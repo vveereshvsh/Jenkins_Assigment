@@ -10,7 +10,7 @@ The following document describes how to setup a CI/CD pipeline with Jenkins. The
 * Ansible tool installed
 * Tomcat server installed and managed by ansible
 
-## Configure Jenkins
+## Configure Jenkins!
 
 - Install jenkins using yum command. You should be able to access Jenkins at http://35.226.157.35:8080/
 
