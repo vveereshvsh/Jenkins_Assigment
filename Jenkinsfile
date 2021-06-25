@@ -87,7 +87,7 @@ node {
      sshagent (['SSH-tomcat']) {
         sh 'id'
         sh 'pwd'
-       sh 'scp JenkinsMavenBuild_Deploy_master/target/JenkinsAssignment.war tomcatuser@34.73.214.58:/opt/tomcat/webapps/'
+       sh 'scp target/JenkinsAssignment.war tomcatuser@34.73.214.58:/opt/tomcat/webapps/'
     }
 }
     stage('Execute Tests'){
