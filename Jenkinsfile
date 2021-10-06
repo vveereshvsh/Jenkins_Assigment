@@ -29,7 +29,8 @@ node {
     stage(" Build  ${POM_ARTIFACTID} and  ${POM_VERSION}") {
         def mvn_version = 'maven'
         withEnv( ["PATH+MAVEN=${tool mvn_version}/bin"] ) {
-            sh "mvn clean package"
+            sh """export PATH=$PATH:/opt/maven/bin
+               mvn clean package"""
         }
         echo "${currentBuild.currentResult}"
             //tool name: 'maven', type: 'maven'
