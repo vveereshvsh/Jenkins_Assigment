@@ -91,8 +91,8 @@ node {
       // sh 'scp target/JenkinsAssignment.war devopsuser@34.93.180.28:~'
          sh """
           scp target/JenkinsAssignment.war devopsuser@34.93.180.28:/opt/tomcat/apache-tomcat-9.0.54/webapps/
-          ssh devopsuser@34.93.180.28 /opt/tomcat/bin/shutdown.sh
-          ssh devopsuser@34.93.180.28 /opt/tomcat/bin/startup.sh
+          ssh devopsuser@34.93.180.28 /opt/tomcat/latest/bin/shutdown.sh
+          ssh devopsuser@34.93.180.28 /opt/tomcat/latest/bin/startup.sh
            """
     }
 }
