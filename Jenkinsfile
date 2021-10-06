@@ -87,7 +87,7 @@ node {
        // sh 'sudo ansible-playbook -u devopsdemo deploy.yml'
      sshagent (credentials: ['SSH-tomcat']) {
        sh 'pwd'
-       sh 'ssh -o StrictHostKeyChecking=no devopsuser@34.93.180.28 uptime'
+       //sh 'ssh -o StrictHostKeyChecking=no devopsuser@34.93.180.28 uptime'
        sh 'scp target/JenkinsAssignment.war devopsuser@34.93.180.28:/opt/tomcat/apache-tomcat-9.0.54/webapps/'
     }
 }
