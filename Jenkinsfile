@@ -86,7 +86,7 @@ node {
        // sh 'sudo ansible-playbook -u devopsdemo deploy.yml'
      sshagent (['SSH-tomcat']) {
        sh 'pwd'
-       sh 'scp target/JenkinsAssignment.war tomcatuser@34.73.214.58:/opt/tomcat/webapps/'
+       sh 'scp target/JenkinsAssignment.war devopsuser@34.93.180.28:/opt/tomcat/webapps/'
     }
 }
     stage('Execute Tests'){
